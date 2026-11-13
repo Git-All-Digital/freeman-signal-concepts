@@ -15,6 +15,8 @@
     document.querySelector('#line-count').textContent=`${count} ${count===1?'line':'lines'}`;
     document.querySelector('[data-credit]').innerHTML=`$${Math.floor(credit)}<span>.${credit%1?'50':'00'}</span>`;
     document.querySelector('[data-annual]').textContent=`$${credit*12}`;
+    const cap=calc.querySelector('[data-cap-status]');
+    if(cap)cap.textContent=count===1?'One line earns a proposed $2.50 monthly credit. A second line reaches the $5 household maximum.':count===2?'Household maximum reached at two lines. Additional lines do not increase this proposed credit.':`${count} lines selected. The household credit stays at $5 per month: the maximum was reached at two lines. This calculator shows the membership credit only; wireless plan pricing is still to be set.`;
     calc.querySelector('[data-step="-1"]').disabled=count===1;
     calc.querySelector('[data-step="1"]').disabled=count===12;
   };

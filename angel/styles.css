@@ -15,3 +15,7 @@
 .guild-art{overflow:hidden}
 
 @media(max-width:400px){.business-hero h1{font-size:58px}.hub-hero h1{font-size:56px}.good-hero h1{font-size:52px}.guild-hero h1{font-size:60px}.called-hero h1{font-size:68px}}
+
+.cap-message{padding:14px 0 0;border-top:1px solid var(--line);font-size:14px;line-height:1.5;margin:18px 0;color:var(--text)}.model-table{overflow-x:auto;margin:24px 0}.model-table table{border-collapse:collapse;min-width:590px;width:100%;font-size:14px;line-height:1.5}.model-table caption{text-align:left;margin-bottom:14px;font-size:12px;color:var(--muted)}.model-table th,.model-table td{border-bottom:1px solid var(--line);text-align:left;padding:14px 12px 14px 0;vertical-align:top}.model-table th{font-weight:700}.model-table thead th{color:var(--accent)}
+
+.business-columns>div{min-width:0}.model-table{max-width:100%}
