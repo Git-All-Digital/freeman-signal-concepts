@@ -13,3 +13,5 @@
 .hub-quicklinks{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.hub-quicklinks a{border:1px solid #777;padding:10px 17px;border-radius:3px;font-size:14px}.hub-quicklinks a:hover{background:var(--paper);color:var(--ink)}
 
 .guild-art{overflow:hidden}
+
+@media(max-width:400px){.business-hero h1{font-size:58px}.hub-hero h1{font-size:72px}}
