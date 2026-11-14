@@ -109,3 +109,13 @@ body.angel-depth.consumer .nav{background:transparent}
 .angel-depth .communication-scene{width:100%;background-position:calc(-50px - var(--scene-x)*300px) calc(var(--scene-y)*-300px)!important}
 .communication-scene span{font-size:16px;padding:42px 12px 18px;overflow-wrap:normal}
 @media(max-width:760px){.communication-scenes{gap:10px}.angel-depth .communication-scene{zoom:1;height:190px;background-size:570px 380px;background-position:calc(-34px - var(--scene-x)*190px) calc(var(--scene-y)*-190px)!important}.communication-scene span{font-size:12px;padding:30px 7px 12px}.communication-scenes .poster-column{gap:12px}.hero-offer{font-size:17px}}
+
+.business-concept-links {
+  margin-top: 24px;
+}
+.business-concept-links p {
+  color: var(--muted);
+}
+.business-concept-links .hub-quicklinks {
+  margin-top: 12px;
+}

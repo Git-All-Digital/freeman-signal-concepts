@@ -1,11 +1,4 @@
 (()=>{
-  const brands={called:'Called','guild-wireless':'Guild Wireless','good-word':'Good Word'};
-  const selected=new URLSearchParams(location.search).get('brand');
-  if(selected&&brands[selected]){
-    document.querySelectorAll('[data-brand-name]').forEach(el=>el.textContent=brands[selected]);
-    document.querySelectorAll('[data-consumer]').forEach(el=>el.href=`../${selected}/`);
-    if(document.body.classList.contains('business')) document.title=`${brands[selected]} | The partnership idea`;
-  }
   const calc=document.querySelector('.calculator');
   const dialog=document.querySelector('.switch-dialog');
   let count=4,lastTrigger;
