@@ -87,3 +87,7 @@ These are remote reference assets in independent concept previews. No asset lice
 ### Additional verified departure: SKETCH companion page
 
 https://www.angel.com/sketchapp was directly rendered November 13. It retains the standard dark Angel navigation but introduces a film-specific brush-lettered SKETCH mark, burgundy radial light, character cutouts and white secondary actions. The current page states the Monster Maker app has closed; this is evidence of a campaign/companion identity, not a claim that the app is operating. This confirms Angel permits contextual title branding while retaining its masterbrand shell. It does not justify treating an unrelated wireless service as a SKETCH-like campaign. Screenshot is retained with the research packet.
+
+## Current artwork interpretation, November 14
+
+Chad directed replacing movie-title columns with reasons families communicate. Current pages retain the observed Angel masks, copper borders, layering and curves while using original generated lifestyle photography. All film-image URLs were removed from the current rendered consumer pages, including subdued background layers. This is a user-directed subject adaptation within the reconstructed design system, not evidence Angel has launched a wireless brand. See CALLED-OFFER.md for the proposed household terms.

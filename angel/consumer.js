@@ -31,7 +31,7 @@
     document.querySelector('[data-summary-price]').textContent=annual?'$159 / illustrative year':'$0';
     document.querySelector('[data-summary-description]').textContent=annual?'Eligible annual Guild membership. Wireless pricing and benefits would be separate.':'Interest only. No deposit or obligation to switch.';
     document.querySelector('[data-summary-timing]').textContent=timing(s);
-    document.querySelector('[data-family-preview]').textContent=`${s.lines} ${s.lines==='1'?'line':'lines'} of household interest. Wireless price and any membership benefit must be confirmed separately. Existing prepaid Guild time stays protected.`;
+    document.querySelector('[data-family-preview]').textContent=`${s.lines} ${s.lines==='1'?'line':'lines'} of household interest. Proposed paid-Guild wireless rate: $23 per line, including taxes and fees. Guild membership stays separate; prepaid time stays protected.`;
     error('');
   };
   window.CalledJourney={update,free(){form.querySelector('[name="offer"][value="waitlist"]').checked=true;update();form.querySelector('[data-review-button]').focus()},review(event){event.preventDefault();const s=read();if(s.offer==='annual'&&s.member!=='new'&&s.billing!=='web'){error('Use the free waitlist while your existing billing path is reviewed.');return false}if(!form.reportValidity())return false;if(!form.elements.understood.checked){error('Confirm that you understand this is a sample preview before continuing.');form.elements.understood.focus();return false}

@@ -38,3 +38,7 @@ Service specification and dated launch/scale quotes; partner roles and distribut
 If an operator-to-Angel Guild transfer T is charged before the partner split, enter it in the wireless pool cost once (allocate a per-household amount consistently across lines), and include Angel receipt of T in G. G must also deduct incremental Guild fulfillment and the Guild-only baseline contribution. Do not treat $159/12 as marginal cost or automatic partner transfer. The simplified calculator compresses these terms; a contract model needs a separate household settlement ledger.
 
 Current promotion eligibility does not establish early extension eligibility: https://support.angel.com/hc/en-us/articles/27968115439255-How-do-I-get-a-discount-on-my-Guild-membership . Keep early extension outside the base investment case. Retained annual previews are hypothetical UX explorations, not purchase capability.
+
+## November 14 recommended offer
+
+CALLED-OFFER.md is the current proposed consumer offer and partner target. $23/paid-Guild line net, proposed $28 standard, $5/line member benefit uncapped. Existing membership remains separately paid, so base existing-Guild delta is zero. $18 all-in cost target; 70/20/10 proposed residual allocation. Four lines: $92 receipts, $72 operating burden, $20 pool, $14 Angel contribution before its CAC/fixed expense. These are negotiating requirements, not provider quotes. The calculator remains editable; Load this proposed case fills the explicit assumptions. No membership transfer, annual advance cash or retention uplift funds this case.

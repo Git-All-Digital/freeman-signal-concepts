@@ -97,3 +97,15 @@ body.angel-depth h1 em,body.good-word.angel-depth h1 em{color:#ffa41c}
 @media(max-width:760px){.depth-hero-grid{grid-template-columns:minmax(0,1fr)}}
 body.angel-depth .nav .button.primary,body.good-word.angel-depth .nav .button.primary,body.good-word.angel-depth .hero-actions .button.primary{color:#141414}
 body.angel-depth.consumer .nav{background:transparent}
+/* Family communication artwork replaces film titles; retain the Angel depth grammar. */
+.angel-depth .communication-scene{background-size:900px 600px;position:relative;overflow:hidden}
+.communication-scene span{position:absolute;inset:auto 0 0;padding:42px 15px 18px;background:linear-gradient(transparent,#000b);color:#fff;font-size:18px;font-weight:700;line-height:1.2}
+.angel-depth .angel-atmosphere{background:radial-gradient(ellipse at 16% 40%,#20524788,transparent 65%),radial-gradient(ellipse at 80% 60%,#89533544,transparent 60%),#141414;opacity:1}
+.angel-depth .depth-story .angel-atmosphere{background:radial-gradient(ellipse at 75% 45%,#88553644,transparent 65%),#141414;opacity:1}
+.hero-offer{margin:20px 0 8px;font-size:20px;color:#fff}.hero-offer strong{font-size:38px;letter-spacing:-1px}.angel-depth .hero-actions{margin-top:20px}
+
+.angel-depth .angel-atmosphere{background-image:radial-gradient(ellipse at 16% 40%,#205247aa,transparent 65%),radial-gradient(ellipse at 80% 60%,#89533566,transparent 60%)!important}
+.communication-scenes{gap:16px;justify-content:space-between}.communication-scenes .poster-column{flex:1;min-width:0}
+.angel-depth .communication-scene{width:100%;background-position:calc(-50px - var(--scene-x)*300px) calc(var(--scene-y)*-300px)!important}
+.communication-scene span{font-size:16px;padding:42px 12px 18px;overflow-wrap:normal}
+@media(max-width:760px){.communication-scenes{gap:10px}.angel-depth .communication-scene{zoom:1;height:190px;background-size:570px 380px;background-position:calc(-34px - var(--scene-x)*190px) calc(var(--scene-y)*-190px)!important}.communication-scene span{font-size:12px;padding:30px 7px 12px}.communication-scenes .poster-column{gap:12px}.hero-offer{font-size:17px}}
