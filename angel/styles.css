@@ -119,3 +119,37 @@ body.angel-depth.consumer .nav{background:transparent}
 .business-concept-links .hub-quicklinks {
   margin-top: 12px;
 }
+
+.business-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(24px, 4vw, 64px);
+}
+.business-hero-art {
+  min-width: 0;
+  perspective: 1100px;
+}
+.business-hero-art .communication-scenes {
+  transform: rotateY(-9deg);
+}
+.business-hero-art .poster-column:first-child {
+  padding-top: 28px;
+}
+.business-hero-art .poster-column:last-child {
+  padding-top: 48px;
+}
+@media (max-width: 900px) {
+  .business-hero {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+  }
+  .business-hero-art {
+    width: min(100%, 540px);
+    justify-self: center;
+  }
+  .business-hero-art .communication-scenes {
+    height: 330px;
+    transform: none;
+  }
+}
