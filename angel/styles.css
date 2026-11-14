@@ -79,7 +79,7 @@ body,h1,h2,h3,h4,button,input,select{font-family:'Angel Sans',Inter,Arial,sans-s
 .angel-depth .field input,.angel-depth .field select,.angel-depth select,.angel-depth input[type="date"],.angel-depth input[type="number"]{background:#171717;color:#fff;border:1px solid #ffffff60;color-scheme:dark}
 .angel-depth .bundle-annual-note,.angel-depth .payment-sample,.angel-depth .billing-detour{background:#262626;border-color:#dfaf8970;color:#fff}
 .angel-depth .journey-steps{color:#ccc}.angel-depth .journey-steps [aria-current]{color:#ffa41c}.angel-depth .offer-price{color:#dfaf89}
-.angel-depth .business-hero{position:relative;background:radial-gradient(120% 95% at 88% 16%,#21cea026 0%,#21cea00a 42%,#21cea000 70%)}
+.angel-depth .business-hero{position:relative;background:radial-gradient(ellipse 36% 54% at 73% 38%,#21cea027 0%,#21cea013 42%,transparent 75%)}
 .proof-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.proof-grid article{padding:28px}.proof-grid h3{color:#dfaf89}.proof-grid p{line-height:1.5;color:#ccc}
 .partner-form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.partner-form label{display:flex;flex-direction:column;gap:8px;font-size:14px}.partner-form input,.partner-form select{padding:12px;border-radius:8px;min-width:0;width:100%;font:inherit}.partner-form small{color:#bbb;font-size:12px}
 .angel-depth .economic-results>div{display:flex;justify-content:space-between;gap:20px;border-bottom:1px solid #ffffff24;padding:18px 0}.economic-results dd{margin:0;text-align:right;color:#dfaf89;font-weight:700}.economic-results dt{color:#ccc}
@@ -129,6 +129,12 @@ body.angel-depth.consumer .nav{background:transparent}
 .business-hero-art {
   min-width: 0;
   perspective: 1100px;
+}
+@media (min-width: 901px) {
+  .business-hero-art {
+    /* Fade the projected cards together, including their shadows. */
+    mask-image: linear-gradient(to right, #000 76%, #000d 85%, #0007 93%, transparent);
+  }
 }
 .business-hero-art .communication-scenes {
   transform: rotateY(-9deg);
