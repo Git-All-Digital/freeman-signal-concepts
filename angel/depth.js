@@ -1,0 +1,14 @@
+(()=>{
+ const planner=document.querySelector('.household-planner');let lines=4;
+ if(planner){const render=()=>{document.querySelector('#household-lines').textContent=`${lines} ${lines===1?'line':'lines'}`;document.querySelector('[data-household-copy]').textContent=`One household quote for ${lines} ${lines===1?'line':'lines'}, with the price and member benefit made clear before you switch.`;document.querySelector('[data-household-link]').href=`join/?offer=waitlist&lines=${lines}`;planner.querySelector('[data-household-step="-1"]').disabled=lines===1;planner.querySelector('[data-household-step="1"]').disabled=lines===12};window.AngelHousehold={step(delta){lines=Math.max(1,Math.min(12,lines+delta));render()}};render()}
+ const model=document.querySelector('#partner-model');if(!model)return;
+ const money=n=>new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:2}).format(n);
+ const output=()=>{const value=n=>model.elements[n].value===''?null:Number(model.elements[n].value);const h=value('households'),n=value('lines'),p=value('price'),c=value('cost'),s=value('share'),g=value('guild'),a=value('cac'),i=value('incentive'),f=value('fixed');const keys=['receipts','variable','pool','angel','scale','payback'];const set=(key,v)=>document.querySelector(`[data-model-${key}]`).textContent=v;
+ if([h,n,p,c,s,g,i,f].some(v=>v===null||!Number.isFinite(v))){keys.forEach(k=>set(k,'Enter assumptions'));document.querySelector('[data-model-verdict]').textContent='Enter the proposed price, provider cost, Angel share and net Guild change. No agreed economics are implied.';return}
+ if(h<1||!Number.isInteger(h)||n<1||n>12||!Number.isInteger(n)||p<0||c<0||s<0||s>100||i<0||f<0||(a!==null&&a<0)){keys.forEach(k=>set(k,'Check inputs'));document.querySelector('[data-model-verdict]').textContent='Use positive whole households and lines, nonnegative prices/costs, and an Angel share from 0 to 100. Guild change may be positive or negative.';return}
+ const pool=p-n*c,angel=pool*s/100+g,monthly=h*angel-f,investment=(a??0)+i;
+ set('receipts',money(p));set('variable',money(n*c));set('pool',money(pool));set('angel',money(angel));set('scale',money(monthly));set('payback',a===null?'Enter acquisition cost':angel>0?`${(investment/angel).toFixed(1)} months`:'No payback at this margin');
+ document.querySelector('[data-model-verdict]').textContent=pool<0?'The wireless pool is negative. A partner split or larger volume does not repair negative unit economics.':monthly<0?'Angel contribution is negative after the entered fixed expense. Rework the offer or acquisition economics.':'Scenario only. Retention lift is not included. Validate paid activation, actual costs and a matched Guild-only comparison before treating this as incremental earnings.';
+ };
+ model.addEventListener('input',output);model.addEventListener('change',output);output();
+})();

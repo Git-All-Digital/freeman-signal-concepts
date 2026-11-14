@@ -1,53 +1,40 @@
-# Family offer: commercial working model
+# Angel wireless commercial model: current revision
 
-November 13, 2026. All wireless prices, included membership mechanics and provider costs are proposals, not contracted economics.
+November 13, 2026. This supersedes the earlier $90 four-line / $14 line-cost scenario, the free-Guild threshold and the unfunded $25 activation incentive. Prior versions remain in Git and historical release archives.
 
-## Household offer
+## Investment thesis
 
-| Paid lines | Monthly wireless total | Average per line | Increment for this line | Guild Premium |
-| --- | --- | --- | --- | --- |
-| 1 | $30 | $30.00 | $30 | Separate |
-| 2 | $55 | $27.50 | $25 | Separate |
-| 3 | $75 | $25.00 | $20 | Separate |
-| 4 | $90 | $22.50 | $15 | One household membership included |
-| 5 | $110 | $22.00 | $20 | Same included membership |
-| 6 | $130 | $21.67 | $20 | Same included membership |
+Test recurring wireless contribution and a stronger Guild household relationship. Measure new Guild acquisition, engagement and retention against a credible Guild-only baseline. Retain an option for greater customer/operating control as the business justifies the added capital and responsibilities. Annual cash acceleration is secondary and requires its own evidence. No Angel wireless demand or economic agreement has been established.
 
-Each extra line adds $20. Taxes and fees, network, data allowance, coverage, support and device eligibility require provider agreement. This is not a cheapest-plan claim or a current-carrier savings quote. Multi-line reduction compares with buying the same proposed lines separately at $30 each. At four lines that reduction is $30/month; membership is a separate bundle feature.
+## Current model
 
-## Protect existing Guild members
+The interactive business page starts without a price, carrier cost, Angel share or Guild delta. The user must enter them. Household count defaults to 1,000 and lines to four solely for scenario sizing. Zero incentive and zero fixed expense are visible editable placeholders, not forecasts.
 
-The four-line threshold includes one eligible household membership while qualifying lines stay active. Direct monthly billing must be reconciled to avoid duplicate charges. Existing prepaid annual time stays intact: an illustrative $159/12 = $13.25 monthly wireless credit substitutes for the included membership during the eligible prepaid term, then inclusion takes over. One provision covers either Guild inclusion or this credit, never both. Actual tier eligibility and reconciliation need Angel agreement.
+Per household, let P be monthly wireless receipts excluding pass-through taxes, L paid lines, C all-in variable cost per line, S Angel's proposed share of the wireless pool, and G the signed net change in Guild contribution versus the existing Guild-only baseline.
 
-## Underwriting
+Wireless pool = P - L*C.
+Angel recurring contribution = wireless pool*S + G.
+Angel monthly contribution after fixed expense = retained households*Angel recurring contribution - entered fixed expense.
+Simple acquisition/incentive payback = (CAC + one-time incentive)/positive recurring household contribution.
 
-Let H be retained active households, L lines per household, C all-in variable cost per paid line, P the household bill, and G the included-membership provision ($13.25 at 4+ lines, zero below four). Monthly contribution before fixed costs, acquisition cost and rollout is H * (P - L*C - G). The retail-reference provision is a conservative placeholder, not an Angel transfer-price quote. Replace it with the negotiated cost or foregone membership contribution consistently; account for cannibalization and avoid double counting.
+No positive retention lift is silently inserted. CAC includes the opportunity cost of media. All-in line cost must include network, platform, support, payment processing and expected variable loss costs consistently. A negative wireless pool is not repaired by a split or more volume. A residual split does not establish contractual loss-sharing.
 
-Four-line household at $90:
+The calculator is a steady-state scenario, not a ramp/cash-flow forecast. Simple payback excludes churn, discounting, fixed startup costs and working-capital effects. Compare quote-backed launch/intermediate/scale cases and the simpler referral alternative.
 
-| All-in variable cost per line | Household contribution/month |
-| --- | --- |
-| $14 | $20.75 |
-| $18 | $4.75 |
-| $22 | -$11.25 |
+## Guild and annual treatment
 
-For a $20 monthly household contribution target, the maximum cost is ($90 - $13.25 - $20)/4 = $14.1875 per line. A fifth line adds $20 revenue and C cost. If actual costs cannot fit, change price or service structure before presenting a live offer.
+An internal Guild payment does not create new combined-company profit. For existing Guild households, deduct displaced contribution and any prepaid credits once. For new members, account for content-share, ticket and other incremental obligations. Distinguish lines, households and paid memberships.
 
-At 10,000 retained four-line households and C=$14: monthly wireless revenue $900,000, membership provision $132,500, variable cost $560,000 and contribution $207,500. $2,490,000 annualized is steady-state contribution before fixed costs, CAC, churn, ramp, bad debt and other omitted expenses. It is not first-year profit or Angel's contractual revenue share. The UI exposes household count, lines and cost to test these assumptions.
+Annual conversions, early extensions and new memberships are separate cohorts. Track upfront cash, refunds, discount, incentives, future renewal displacement and earned revenue separately. No entire future year is assumed immediately recognized. The optional consumer annual preview retains the $159 promotional reference but removes a funded wireless incentive. Early extensions remain a proposed mechanism. The free waitlist requires no annual purchase.
 
-## Waitlist and annual membership
+Angel's management call supports disciplined acquisition and growth within available means and reports better retention/upfront cash for annual members: https://ir.angel.com/documents/transcripts/2026-11-11-transcript-3q26.pdf . Angel's filing specifies deferred membership revenue allocated across service, tickets and merchandise: https://www.sec.gov/Archives/edgar/data/1865200/000186520026000100/angx-20260930x10q.htm , Note 2. These are not a wireless endorsement or an accounting determination for an unnegotiated arrangement.
 
-Use a free interest list to measure household demand, lines, expected switching time and existing Guild status. A production form must have real provider storage and consent, but this prototype collects nothing. No fabricated queue rank, launch date or scarcity.
+## Required commercial inputs
 
-The optional annual offer uses $159 plus a proposed $25 credit after qualifying activation. Annual purchase starts Guild benefits before wireless launch; it does not gate the family bundle or guarantee launch. Existing annual extensions begin after their current paid-through dates. Unsupported third-party billing follows its own platform or the free waitlist path.
+Service specification and dated launch/scale quotes; partner roles and distribution waterfall; incremental Guild costs/cannibalization; cohort activation and retention; care scope and service levels; minimum commitments/startup cash; handset financing; customer/data/portability rights; replacement and termination rights; actual accounting presentation. No subscriber threshold automatically creates transferable customer contracts or a higher enterprise value.
 
-Annual cash is not automatically incremental earned revenue. Separate existing annual renewal cash accelerated, monthly members converted to annual, and genuinely new memberships. The existing business example shows $715,500 gross cash across 3,000 annual extensions, 1,000 monthly conversions and 500 possible new members; the no-churn $20 monthly baseline implies an $81,000 full-year discount for the conversion cohort. Deduct redemption and cannibalization costs; recognize membership revenue over the service period with relevant allocations.
+## Settlement and counterfactual discipline
 
-## Current public references
+If an operator-to-Angel Guild transfer T is charged before the partner split, enter it in the wireless pool cost once (allocate a per-household amount consistently across lines), and include Angel receipt of T in G. G must also deduct incremental Guild fulfillment and the Guild-only baseline contribution. Do not treat $159/12 as marginal cost or automatic partner transfer. The simplified calculator compresses these terms; a contract model needs a separate household settlement ledger.
 
-- Angel Premium annual promotion, $159 as observed November 13: https://www.angel.com/guild/join/yearly . Promotional eligibility, exact tier and renewal terms vary.
-- Angel billing policy: https://support.angel.com/hc/en-us/articles/43827909148439-How-Do-I-Change-My-Guild-Membership-Plan . Monthly-to-annual and third-party billing rules do not establish early-extension availability.
-- Visible: https://www.visible.com/plans , observed November 13 advertising $19/month for one year with HOLIDAYHACK. This limits any broad savings claim.
-- US Mobile: https://www.usmobile.com/plans , observed first-year annual Starter $199, renewing at $270. Services are not assumed identical.
-
-The commercial case is a recurring household relationship, more lines per acquired account, new Guild acquisition and retention, and optional upfront annual cash. None of those outcomes is guaranteed by a brand name or gross bookings alone.
+Current promotion eligibility does not establish early extension eligibility: https://support.angel.com/hc/en-us/articles/27968115439255-How-do-I-get-a-discount-on-my-Guild-membership . Keep early extension outside the base investment case. Retained annual previews are hypothetical UX explorations, not purchase capability.
